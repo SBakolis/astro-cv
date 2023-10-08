@@ -1,7 +1,12 @@
 ---
-import { themeChange } from 'theme-change'
+    import ThemeToggle from "./ThemeToggle.astro";
+    import Navigation from "./Navigation.astro";
+    import {MenuItems} from "../constants/menu-items";
+    import Avatar from "./Avatar.astro";
 ---
 
-<div>
-
+<div class="flex flex-row justify-between pt-2 px-4">
+    <Avatar/>
+    <Navigation tabs={MenuItems}></Navigation>
+    <ThemeToggle/>
 </div>

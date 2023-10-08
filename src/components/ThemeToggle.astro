@@ -1,0 +1,18 @@
+---
+import { Icon } from 'astro-icon'
+
+---
+<script>
+    import { themeChange } from 'theme-change'
+    themeChange();
+</script>
+
+<div class="flex flex-row">
+    <Icon class="w-5 aspect-square mx-1" name="gg:sun" />
+
+    <label class="label cursor-pointer">
+        <input data-toggle-theme="dark-custom,light-custom'" type="checkbox" class="toggle toggle-primary" checked />
+    </label>
+
+    <Icon class="w-5 aspect-square mx-1" name="gg:moon" />
+</div>

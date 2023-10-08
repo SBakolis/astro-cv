@@ -7,3 +7,11 @@ interface Props {
 
 const { tabs } = Astro.props;
 ---
+
+<div>
+    <ul class="menu hidden lg:menu-horizontal bg-base-200 rounded-box mt-1">
+        {tabs.map((tab) => (
+            <li><a>{tab.text}</a></li>
+        ))}
+    </ul>
+</div>
